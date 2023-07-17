@@ -100,6 +100,7 @@
 .weather__list{
   display: grid;
   gap: 0.7em;
+
 }
 .weather__list-item {
   display: grid;
@@ -112,4 +113,49 @@
 }
 .weather__list-value{
   font-weight: 500;
+}
+
+/*Mobile 
+@media (min-width: 480px) {} */
+
+/* Tamaño tablet (768-480) */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .Card{
+    width: 100%;
+    max-width: 75vw;
+    max-height: 75vh;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.925);
+  }
+  .Title_App{
+    font-size: 3rem;
+
+  }
+  .weather__info-title{
+    font-size: 1.7rem;
+  }
+  .weather__list-value{
+    font-size: 1rem;
+  }
+}
+/*Desktops*/
+
+@media only screen and (min-width: 1024px) {
+  .Card{
+    width: 100%;
+    min-width: 75vw;
+    min-height: 75vh;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(7, 7, 7, 0.925);
+  }
+  .Title_App{
+    font-size: 4rem;
+
+  }
+  .weather__info-title{
+    font-size: 2rem;
+  }
+  .weather__list-value{
+    font-size: 1.5rem;
+  }
 }

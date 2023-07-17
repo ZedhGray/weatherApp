@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: url(https://i.gifer.com/Ol50.gif);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.384), rgba(5, 7, 12, 0.192)), url(https://i.gifer.com/Ol50.gif);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -37,4 +37,11 @@ button {
 img {
   display: block;
   width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  body{
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(https://i.gifer.com/fyDi.gif);
+  }
+
 }
